@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+.main_container {
+  width: 96.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left_div {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.right_div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.left_div h2 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+#left_div_para {
+  color: gray;
+  margin: 15px 0 25px 0;
+}
+
+label {
+  color: gray;
+  margin-left: -75px;
+}
+
+input {
+  padding: 10px 20px;
+  margin: 10px 0 20px -80px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 150%;
+}
+
+input[type="checkbox"] {
+  width: 10;
+  margin-left: -73%;
+}
+
+span {
+  margin-left: -72%;
+}
+
+#checkBoxDiv {
+  width: 155%;
+  margin-left: -30%;
+  align-items: space-between;
+}
+
+#checkBoxDiv #p {
+  color: blue;
+  margin-left: 33.5%;
+}
+
+button[type="submit"] {
+  width: 170%;
+  padding: 15px 20px;
+  margin: 20px 0 15px -80px;
+  background-color: rgb(64, 113, 237);
   color: white;
+  border: none;
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+button[type="button"] {
+  margin: 10px 0 15px 20px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#p {
+  margin-left: -5px;
+}
+
+#link {
+  margin-left: 1px;
+  color: black;
+  font-weight: bold;
+}
+
+.background {
+  height: 730px;
+  border-radius: 20px;
+}
+
+@rem _________________________________________________
+
+@REM Mobile View
+@media (max-width:480px) {
+  .right_div,
+  .background,
+  img {
+    display: none !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main_container {
+    padding: 5px;
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .left_div h2 {
+    font-size: 18px;
+  }
+
+  #left_div_para,
+  label,
+  #p,
+  #link {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  input,
+  button[type="submit"],
+  button[type="button"] {
+    padding: 10px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@rem ________________________________________________________
+
+@rem Tablet View
+@media (max-width:768px) {
+  .main_container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left_div,
+  .right_div {
+    width: 100%;
+    height: auto;
+  }
+
+  input,
+  button[type="submit"],
+  button[type="button"] {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #checkBoxDiv {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .background {
+    display: none;
   }
 }
