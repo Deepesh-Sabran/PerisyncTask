@@ -94,6 +94,7 @@ button[type="button"] {
   margin-left: 1px;
   color: black;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .background {
