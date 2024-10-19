@@ -110,70 +110,69 @@ button[type="button"] {
 /* Media Query for mobile devices */
 @media (max-width: 768px) {
   .main_container {
-    flex-direction: column; /* Stack elements vertically */
-    padding: 10px; /* Reduce padding for smaller screens */
+    flex-direction: column;
+    padding: 10px;
   }
 
   .right_div {
-    width: 100%; /* Take full width on mobile */
-    padding: 10px; /* Add padding for better spacing */
-    order: -1; /* Move right_div to the top */
+    width: 100%;
+    padding: 10px;
+    order: -1;
   }
 
-  /* Ensure the image inside the right_div fits the screen */
   .right_div img {
-    max-width: 100%; /* Ensure image doesn't exceed screen width */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%;
+    height: auto;
   }
 
   .left_div {
-    width: 100%; /* Full width on mobile */
-    padding: 10px; /* Add padding to prevent content from touching the edges */
-    align-items: center; /* Center-align items */
+    width: 100%;
+    padding: 10px;
+    align-items: center;
   }
 
   .left_div h2 {
     text-align: center;
-    width: 100%; /* Ensure the heading spans full width */
-    margin-bottom: 15px; /* Add some space below the heading */
+    width: 100%;
+    margin-bottom: 15px;
   }
 
   #left_div_para {
     color: gray;
-    text-align: center; /* Center the paragraph */
-    margin: 10px 0 20px 0; /* Adjust margins */
-    width: 100%; /* Ensure it takes full width */
+    text-align: center;
+    margin: 10px 0 20px 0;
+    width: 100%;
   }
 
   label {
-    width: 100%; /* Labels take full width */
-    text-align: left; /* Align labels to the left */
-    margin-left: 0; /* Remove left margin */
-    margin-bottom: 5px; /* Add some space below labels */
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 5px;
   }
 
   input {
-    width: 100%; /* Inputs take full width */
-    margin: 10px 0 15px 0; /* Adjust margins */
-    padding: 10px 15px; /* Adjust padding for mobile */
-    border-radius: 5px; /* Slightly smaller border radius */
+    width: 100%;
+    margin: 10px 0 15px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
   }
 
   button[type="submit"] {
-    width: 100%; /* Button takes full width */
-    margin: 20px 0 10px 0; /* Adjust margins for proper spacing */
-    padding: 15px 0; /* Center-align text inside the button */
+    width: 100%;
+    margin: 20px 0 10px 0;
+    padding: 15px 0;
   }
 
   button[type="button"] {
-    width: 100%; /* Button takes full width */
-    margin: 10px 0 10px 0; /* Adjust margins */
-    padding: 15px 0; /* Center-align text inside the button */
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 15px 0;
   }
 
   #p {
-    margin-left: 0; /* Ensure it is aligned properly */
-    text-align: center; /* Center the paragraph */
+    margin-left: 0;
+    text-align: center;
     width: 100%;
   }
 
@@ -183,8 +182,8 @@ button[type="button"] {
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-    display: block; /* Ensure it's properly centered */
-    margin-top: 5px; /* Add a little space on top */
+    display: block;
+    margin-top: 5px;
   }
 }
 
@@ -196,34 +195,34 @@ button[type="button"] {
 
   .left_div,
   .right_div {
-    width: 50%; /* Both divs take 50% width for side-by-side layout */
+    width: 50%;
   }
 
   .left_div {
-    padding: 15px; /* Add a bit of padding */
-    align-items: flex-start; /* Align items to the left */
+    padding: 15px;
+    align-items: flex-start;
   }
 
   .left_div h2 {
-    font-size: 1.8rem; /* Adjust heading size for tablets */
+    font-size: 1.8rem;
     margin-bottom: 20px;
   }
 
   #left_div_para {
-    text-align: left; /* Align text to the left */
-    margin: 15px 0 25px 0; /* Adjust margin */
+    text-align: left;
+    margin: 15px 0 25px 0;
   }
 
   label {
     margin-left: 0;
     text-align: left;
-    margin-bottom: 10px; /* Add space below label */
+    margin-bottom: 10px;
   }
 
   input {
-    width: 100%; /* Full width for inputs */
-    margin: 10px 0 20px 0; /* Adjust margins */
-    padding: 10px; /* Maintain comfortable padding */
+    width: 100%;
+    margin: 10px 0 20px 0;
+    padding: 10px;
   }
 
   button[type="submit"] {
@@ -241,7 +240,7 @@ button[type="button"] {
   #p,
   #link {
     margin-left: 30px;
-    text-align: center; /* Align text to the left */
+    text-align: center;
   }
 
   .right_div {
@@ -249,7 +248,7 @@ button[type="button"] {
   }
 
   .right_div img {
-    max-width: 100%; /* Keep image within the screen width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
   }
 }
