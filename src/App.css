@@ -107,76 +107,149 @@ button[type="button"] {
   border-radius: 20px;
 }
 
-@rem _________________________________________________
-
-@REM Mobile View
-@media (max-width:480px) {
-  .right_div,
-  .background,
-  img {
-    display: none !important;
-  }
-
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
   .main_container {
-    padding: 5px;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px; /* Reduce padding for smaller screens */
   }
 
-  .logo {
-    margin-bottom: 30px;
+  .right_div {
+    width: 100%; /* Take full width on mobile */
+    padding: 10px; /* Add padding for better spacing */
+    order: -1; /* Move right_div to the top */
+  }
+
+  /* Ensure the image inside the right_div fits the screen */
+  .right_div img {
+    max-width: 100%; /* Ensure image doesn't exceed screen width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .left_div {
+    width: 100%; /* Full width on mobile */
+    padding: 10px; /* Add padding to prevent content from touching the edges */
+    align-items: center; /* Center-align items */
   }
 
   .left_div h2 {
-    font-size: 18px;
-  }
-
-  #left_div_para,
-  label,
-  #p,
-  #link {
-    font-size: 14px;
     text-align: center;
+    width: 100%; /* Ensure the heading spans full width */
+    margin-bottom: 15px; /* Add some space below the heading */
   }
 
-  input,
-  button[type="submit"],
+  #left_div_para {
+    color: gray;
+    text-align: center; /* Center the paragraph */
+    margin: 10px 0 20px 0; /* Adjust margins */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  label {
+    width: 100%; /* Labels take full width */
+    text-align: left; /* Align labels to the left */
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 5px; /* Add some space below labels */
+  }
+
+  input {
+    width: 100%; /* Inputs take full width */
+    margin: 10px 0 15px 0; /* Adjust margins */
+    padding: 10px 15px; /* Adjust padding for mobile */
+    border-radius: 5px; /* Slightly smaller border radius */
+  }
+
+  button[type="submit"] {
+    width: 100%; /* Button takes full width */
+    margin: 20px 0 10px 0; /* Adjust margins for proper spacing */
+    padding: 15px 0; /* Center-align text inside the button */
+  }
+
   button[type="button"] {
-    padding: 10px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; /* Button takes full width */
+    margin: 10px 0 10px 0; /* Adjust margins */
+    padding: 15px 0; /* Center-align text inside the button */
+  }
+
+  #p {
+    margin-left: 0; /* Ensure it is aligned properly */
+    text-align: center; /* Center the paragraph */
+    width: 100%;
+  }
+
+  #link {
+    margin-left: 0;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: block; /* Ensure it's properly centered */
+    margin-top: 5px; /* Add a little space on top */
   }
 }
 
-@rem ________________________________________________________
-
-@rem Tablet View
-@media (max-width:768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .main_container {
-    flex-direction: column;
-    padding: 10px;
+    width: 95vw;
+    padding: 15px; /* Slightly reduce padding */
   }
 
   .left_div,
   .right_div {
-    width: 100%;
-    height: auto;
+    width: 50%; /* Both divs take 50% width for side-by-side layout */
   }
 
-  input,
-  button[type="submit"],
+  .left_div {
+    padding: 15px; /* Add a bit of padding */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .left_div h2 {
+    font-size: 1.8rem; /* Adjust heading size for tablets */
+    margin-bottom: 20px;
+  }
+
+  #left_div_para {
+    text-align: left; /* Align text to the left */
+    margin: 15px 0 25px 0; /* Adjust margin */
+  }
+
+  label {
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 10px; /* Add space below label */
+  }
+
+  input {
+    width: 100%; /* Full width for inputs */
+    margin: 10px 0 20px 0; /* Adjust margins */
+    padding: 10px; /* Maintain comfortable padding */
+  }
+
+  button[type="submit"] {
+    width: 110%;
+    margin: 20px 0 15px 0;
+    padding: 15px;
+  }
+
   button[type="button"] {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 85%;
+    margin: 10px 0 15px 0;
+    padding: 15px;
   }
 
-  #checkBoxDiv {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+  #p,
+  #link {
+    margin-left: 30px;
+    text-align: center; /* Align text to the left */
   }
 
-  .background {
-    display: none;
+  .right_div {
+    padding: 15px;
+  }
+
+  .right_div img {
+    max-width: 100%; /* Keep image within the screen width */
+    height: auto; /* Maintain aspect ratio */
   }
 }
